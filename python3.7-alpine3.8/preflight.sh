@@ -1,1 +1,1 @@
-echo "-->[SKIP] Preflight not implemented"
+echo "[SKIP] Preflight not implemented"

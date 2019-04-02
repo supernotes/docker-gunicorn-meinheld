@@ -1,17 +1,20 @@
 # docker-gunicorn-meinheld
 A Docker image for running Python web apps with Gunicorn + Meinheld workers (for big speed)
 
+## Important Considerations
+The path of the `requirements` file cannot currently be configured. You can configure the name with `REQUIREMENTS_FILE`, but the file itself must be found in `/[BASE_NAME]/[REQUIREMENTS_FILE]`
+
 ## Environment variables
-`ROOT_DIRECTORY`
+`BASE_NAME`
 `APP_SUBDIRECTORY`
+
+`REQUIREMENTS_FILE`
 
 `PREFLIGHT_PATH`
 `PREFLIGHT_FILE`
 
 `GUNICORN_CONF_PATH`
 `GUNICORN_CONF_FILE`
-
-`REQUIREMENTS_FILE`
 
 `PYTHON_MODULE_NAME`
 `PYTHON_VARIABLE_NAME`
