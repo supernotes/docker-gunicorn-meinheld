@@ -1,0 +1,5 @@
+version: '3'
+services:
+  python3.7-alpine3.8:
+    build: ./python3.7-alpine3.8
+    image: supernotes/gunicorn-meinheld:python3.7-alpine3.8
